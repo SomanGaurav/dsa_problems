@@ -23,10 +23,9 @@ void NCRtab(vector<vector<long long int>> &memo){
                 memo[i][j] = memo[max(0 , i-1)][j] + memo[max(0 , i-1)][max(0,j-1)] ; 
             }
 
-             cout << i << j << " " << memo[i][j] << endl ; 
         }
     }
-    cout << 2 << endl ; 
+
 }
 
 int main(){
